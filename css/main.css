@@ -11,7 +11,7 @@
     --Light-royal-blue: hsl(241, 81%, 54%);
     /* circle */
     --Violet-blue: hsla(256, 72%, 46%, 1);
-    --Persian-blue: hsla(241, 72%, 46%, 0);
+    --Persian-blue: hsla(241, 30%, 27%, 1);
 
     /* Neutral */
     --Pale-blue: hsl(221, 100%, 96%);
@@ -34,6 +34,7 @@
 body{
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 18px;
@@ -130,9 +131,17 @@ text-align: right;
     text-decoration: none;
     display: block;
     text-align: center;
-    background-color: var(--Light-royal-blue);
+    background-color: var(--Persian-blue);
     padding: 20px;
     border-radius: 30px;
     color: white;
     margin-top: 40px;
+    transition: 0.3s;
+}
+.summary a:hover{
+    background-color: var(--Light-royal-blue);
+}
+footer{
+    margin-top: 20px;
+    text-align: center;
 }
